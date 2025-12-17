@@ -24,10 +24,10 @@ const Auth = () => {
   const prefersReducedMotion = useReducedMotion();
 
   // Sync isLogin state with URL query parameter
+  const mode = searchParams.get('mode');
   useEffect(() => {
-    const mode = searchParams.get('mode');
     setIsLogin(mode !== 'signup');
-  }, [searchParams]);
+  }, [mode]);
 
   // Redirect if already logged in
   useEffect(() => {
