@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirm Your Email - Verity</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: #0A0A0A;
+      color: #FFFFFF;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .logo {
+      font-size: 32px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 8px;
+    }
+    .tagline {
+      color: #9CA3AF;
+      font-size: 14px;
+    }
+    .content {
+      background-color: #1A1A1A;
+      border-radius: 16px;
+      padding: 40px;
+      margin-bottom: 24px;
+    }
+    h1 {
+      color: #FFFFFF;
+      font-size: 24px;
+      margin: 0 0 16px 0;
+    }
+    p {
+      color: #D1D5DB;
+      line-height: 1.6;
+      margin: 0 0 24px 0;
+    }
+    .button {
+      display: inline-block;
+      background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
+      color: #FFFFFF;
+      text-decoration: none;
+      padding: 14px 32px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-align: center;
+    }
+    .button:hover {
+      opacity: 0.9;
+    }
+    .footer {
+      text-align: center;
+      color: #6B7280;
+      font-size: 12px;
+      line-height: 1.6;
+    }
+    .footer a {
+      color: #FF8E53;
+      text-decoration: none;
+    }
+    .security-notice {
+      background-color: #2D2D2D;
+      border-left: 4px solid #FF8E53;
+      padding: 16px;
+      margin-top: 24px;
+      border-radius: 4px;
+    }
+    .security-notice p {
+      margin: 0;
+      font-size: 13px;
+      color: #9CA3AF;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">Verity</div>
+      <div class="tagline">Real connections, real conversations</div>
+    </div>
+
+    <div class="content">
+      <h1>Confirm your email address</h1>
+      <p>
+        Hi there! 👋
+      </p>
+      <p>
+        Welcome to Verity - Australia's video-first dating app. Before you start meeting genuine people through 10-minute video dates, we need to confirm your email address.
+      </p>
+      <p>
+        Click the button below to verify your email and complete your profile:
+      </p>
+      <p style="text-align: center; margin: 32px 0;">
+        <a href="{{ .ConfirmationURL }}" class="button">Confirm Email Address</a>
+      </p>
+      <p style="font-size: 13px; color: #9CA3AF;">
+        This link will expire in 24 hours. If you didn't create an account with Verity, you can safely ignore this email.
+      </p>
+
+      <div class="security-notice">
+        <p>
+          <strong>Security tip:</strong> Verity will never ask for your password via email. If you receive suspicious emails claiming to be from Verity, please forward them to <a href="mailto:security@getverity.com.au">security@getverity.com.au</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        <strong>Verity</strong> - Built in Canberra, Australia 🇦🇺<br>
+        <a href="https://getverity.com.au">getverity.com.au</a>
+      </p>
+      <p>
+        <a href="https://getverity.com.au/privacy">Privacy Policy</a> • 
+        <a href="https://getverity.com.au/terms">Terms of Service</a>
+      </p>
+      <p style="margin-top: 16px;">
+        © 2025 Verity Australia Pty Ltd. All rights reserved.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
