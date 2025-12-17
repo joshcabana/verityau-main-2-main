@@ -23,6 +23,12 @@ const Auth = () => {
   const navigate = useNavigate();
   const prefersReducedMotion = useReducedMotion();
 
+  // Sync isLogin state with URL query parameter
+  useEffect(() => {
+    const mode = searchParams.get('mode');
+    setIsLogin(mode !== 'signup');
+  }, [searchParams]);
+
   // Redirect if already logged in
   useEffect(() => {
     if (!loading && user) {
