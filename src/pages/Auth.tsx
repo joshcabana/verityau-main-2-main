@@ -250,7 +250,10 @@ const Auth = () => {
             ) : (
               <button
                 type="button"
-                onClick={() => setIsLogin(!isLogin)}
+                onClick={() => {
+                  const newMode = isLogin ? 'signup' : 'login';
+                  navigate(newMode === 'signup' ? '/auth?mode=signup' : '/auth');
+                }}
                 className="text-sm text-white/60 hover:text-white transition-smooth"
               >
                 {isLogin ? "Don't have an account? " : "Already have an account? "}
